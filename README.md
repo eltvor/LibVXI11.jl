@@ -42,6 +42,6 @@ vxi_close_device(dev, "192.168.0.10")
 ## See also
 - the original [libvxi11 library](https://github.com/ladmanj) we call, and its [homepage](http://optics.eee.nottingham.ac.uk/vxi11/)
 - different projects with similar goal:
--- [Keno/VXI11.jl](https://github.com/Keno/VXI11.jl) -- pure Julia implementation of the VXI11's RPC. Seems to lack the RPC-portmapper, so the instrument name to TCP port resolution is not possible
+    * [Keno/VXI11.jl](https://github.com/Keno/VXI11.jl) - pure Julia implementation of the VXI11's RPC. Seems to lack the RPC-portmapper, so the instrument name to TCP port resolution is not possible
+    * [Instruments.jl](https://instrumentsjl.readthedocs.io/)
 
--- [Instruments.jl](https://instrumentsjl.readthedocs.io/)

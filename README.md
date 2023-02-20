@@ -8,9 +8,16 @@
 ## Redistribution and licensing
 The provided code and license covers only the `LibVXI11.jl` wrapper, not the shared library `libvxi11.so`, which is licensed under its own mix of GNU GPLv2 and a special license for the `.x` RPC source file.
 
+## Installation
+```
+julia> using Pkg
+
+julia> Pkg.add(path="https://github.com/eltvor/LibVXI11.jl")
+```
+
 ## Usage
 ```
-dev = vxi_open_device("192.168.0.10")
+dev = vxi_open_device("192.168.0.10") # or vxi_open_device("192.168.0.10", device="gpib,1") if device name differs from "instr0"
 vxi_send(dev, "*idn?")
 vxi_receive_s(dev)
 vxi_close_device(dev, "192.168.0.10")
